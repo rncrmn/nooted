@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "nooted_backend": {
+      "main": "src/nooted_backend/main.mo",
+      "type": "motoko"
+    },
+    "nooted_frontend": {
+      "dependencies": [
+        "nooted_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/nooted_frontend/src/index.html"
+      },
+      "source": [
+        "src/nooted_frontend/assets",
+        "dist/nooted_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
